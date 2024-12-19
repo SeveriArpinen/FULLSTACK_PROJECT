@@ -1,0 +1,15 @@
+{
+  "name": "fullstack_project",
+  "version": "1.0.0",
+  "description": "This branch is for the module MongoDB\r It contains the work done in the MongoDB -module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  }
+}
