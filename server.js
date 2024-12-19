@@ -1,39 +1,19 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import posts from "./routes/posts.js";
 const port = process.env.PORT || 8000;
 
 const app = express();
 
-let posts = [
-  { id: 1, title: "Post one" },
-  { id: 2, title: "Post two" },
-  { id: 3, title: "Post three" },
-];
+//body paresr middleware
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // setup static folder
 // app.use(express.static(path.join(__dirname, "public")));
 
-//get all posts
-app.get("/api/posts", (req, res) => {
-  const limit = parseInt(req.query.limit);
-
-  if (!isNaN(limit) && limit > 0) {
-    res.status(200).json(posts.slice(0, limit));
-  } else {
-    res.status(200).json(posts);
-  }
-});
-
-//get one post
-app.get("/api/posts/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  const post = posts.find((post) => post.id === id);
-
-  if (!post) {
-    res.status(404).json({ msg: `A post with id ${id} was not found` });
-  } else {
-    res.status(200).json(post);
-  }
-});
+// ROUTES
+app.use("/api/posts", posts);
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
