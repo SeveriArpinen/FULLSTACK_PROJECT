@@ -1,9 +1,3 @@
-This is a repository for the course: Software Development Skills: Full-Stack
+This branch is for the module React
 
-You are currently on branch: Main
-
-This branch will contain the PROJECT, for the course.
-
-Rest of the work will be on different branches.
-
-These branches will contain the name of the module and the files that were made during that module
+It contains the work done in the React -module
