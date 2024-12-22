@@ -9,11 +9,13 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 p {
@@ -48,7 +50,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #555555;
   margin-bottom: 60px;
 }
 
@@ -65,10 +67,11 @@ h3 {
 .header ul li a {
   display: flex;
   align-items: center;
+  color: #ffffff;
 }
 
 .header ul li a:hover {
-  color: #777;
+  color: #bbbbbb;
 }
 
 .header ul li a svg {
@@ -83,7 +86,7 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color: #bbbbbb;
 }
 
 .goals {
@@ -93,7 +96,7 @@ h3 {
 }
 
 .goal {
-  background-color: #f4f4f4;
+  background-color: #1e1e1e;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -106,6 +109,7 @@ h3 {
   cursor: pointer;
   border: none;
   background: none;
+  color: #ffffff;
 }
 
 .form,
@@ -123,24 +127,27 @@ h3 {
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #555555;
   border-radius: 5px;
   margin-bottom: 10px;
   font-family: inherit;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .form-group label {
   text-align: left;
   display: block;
   margin: 0 0 5px 3px;
+  color: #ffffff;
 }
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid #555555;
   border-radius: 5px;
-  background: #000;
-  color: #fff;
+  background: #333333;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -156,8 +163,8 @@ h3 {
 }
 
 .btn-reverse {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
 }
 
 .btn-block {
@@ -167,6 +174,7 @@ h3 {
 
 .btn:hover {
   transform: scale(0.98);
+  background-color: #555555;
 }
 
 .loadingSpinnerContainer {
@@ -186,7 +194,7 @@ h3 {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #000 transparent #555 transparent;
+  border-color: #ffffff transparent #555555 transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
