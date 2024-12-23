@@ -24,4 +24,6 @@ These branches will contain the name of the module and the files that were made 
 
 ## Demo
 
+The application is not deployed.
+
 Link for a DEMO VIDEO: [Watch Demo](https://www.youtube.com/watch?v=F-TX13ncIkE)
